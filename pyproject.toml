@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "semantic-seg"
+version = "0.1.0"
+description = ""
+authors = ["sontyubo <sontyubo@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.2"
+torch = "^2.3.1"
+torchvision = "^0.18.1"
+pillow = "^10.4.0"
+matplotlib = "^3.9.1"
+opencv-python = "^4.10.0.84"
+requests = "^2.32.3"
+numpy = "^2.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
