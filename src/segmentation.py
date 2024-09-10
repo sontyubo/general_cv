@@ -22,6 +22,9 @@ def segment_image(img_path):
     # 画像の前処理を実行
     input_batch = preprocess_image(img_path)
     # pytorchがGPUの情報を確認する
+    print()
+    print(torch.cuda.is_available())
+    print()
     if torch.cuda.is_available():
         input_batch = input_batch.to('cuda')
         model.to('cuda')
